@@ -1,6 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "./src",
+    "paths": {
+      "interfaces/": ["interfaces/*"],
+      "atoms/": ["atoms/*"],
+      "molecules/": ["molecules/*"],
+      "pages/": ["pages/*"],
+      "libs/": ["libs/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
