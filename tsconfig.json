@@ -6,8 +6,11 @@
       "interfaces/": ["interfaces/*"],
       "atoms/": ["atoms/*"],
       "molecules/": ["molecules/*"],
+      "organisms/": ["organisms/*"],
+      "templates/": ["templates/*"],
       "pages/": ["pages/*"],
-      "libs/": ["libs/*"]
+      "libs/": ["libs/*"],
+      "icons/": ["icons/*"]
     },
     "lib": [
       "dom",
@@ -29,6 +32,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "src/interfaces/custom.d.ts"
   ]
 }

@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, Login, SignUp } from './pages';
+import { Home, Auth, SignUp, Provider } from './pages';
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth" element={<Login />}>
-          <Route path="signup" element={<SignUp />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="/" element={<Provider />}>
+          <Route index element={<Home />} />
+          <Route path=":paramID" element={<Home />} />
         </Route>
-        <Route index element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
